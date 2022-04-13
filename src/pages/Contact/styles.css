@@ -1,0 +1,174 @@
+/* Contact Styles */
+.contact {
+    min-height: 100vh;
+    width: 100vw;
+    text-align: center;
+    padding-top: 9rem;
+  }
+  
+  .contact .heading {
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 1rem;
+    font-size: 3.5rem;
+    color: var(--dark);
+  }
+  
+  .contact .heading span {
+    background: var(--primary-base);
+    color: var(--white);
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+  }
+  
+  .contact .icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+  
+  .contact .icons-container .icons {
+    flex: 1 1 25rem;
+    background: var(--white);
+    padding: 2rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    border-radius: .6rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    text-align: center;
+  }
+  
+  .contact .icons-container .icons img {
+    height: 6rem;
+  }
+  
+  .contact .icons-container .icons h3 {
+    font-size: 2.5rem;
+    color: var(--gray);
+    padding: 1rem 0;
+  }
+  
+  .contact .icons-container .icons p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--gray);
+    padding: .2rem 0;
+  }
+  
+  .contact .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact .row .image img {
+    height: 75vh;
+    width: 40vw;
+  }
+  
+  .contact .row .form-container {
+    width: 50%;
+    text-align: left;
+    padding: 0 5rem;
+  }
+  
+  .contact .row .form-container input, textarea {
+    outline: none;
+    border: none;
+    height: 4rem;
+    background: none;
+    border-radius: .5rem;
+    box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, .2);
+    padding: 0 1rem;
+    margin: 1rem 0;
+    font-size: 1.6rem;
+  }
+  
+  .contact .row .form-container .inputBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contact .row .form-container .inputBox input[type="text"]{
+    width: 49%;
+  }
+  
+  .contact .row .form-container input[type="email"] {
+    width: 100%;
+  }
+  
+  .contact .row .form-container textarea {
+    width: 100%;
+    height: 20rem;
+    padding: 1rem;
+    resize: none;
+  }
+  
+  .contact .row .form-container input[type="submit"] {
+    background-color: var(--primary-base);
+    color: var(--white);
+    cursor: pointer;
+    height: 4rem;
+    width: 10rem;
+  }
+  
+  .contact .row .form-container input[type="submit"]:hover {
+    opacity: .8;
+  }
+  
+  
+  
+  /* Midea Queries */
+  @media (max-width: 991px) {
+  
+    html{
+      font-size: 55%;
+    }
+  
+  }
+  
+  @media (max-width: 768px){
+  
+    .group-service .row {
+      flex-flow: column-reverse;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  
+    .group-service .row:nth-child(even) {
+      flex-flow: column;
+    } 
+  
+    .group-service .row .image img {
+      width: 100vw;
+    } 
+  
+    .group-service .row .content {
+      padding: 0;
+    }
+  
+    .contact .row {
+      flex-flow: column;
+    }
+  
+    .contact .row .image img {
+      width: 100vw;
+    }
+  
+    .contact .row .form-container{
+      width: 100%;
+      padding: 0 1.5rem;
+    }
+  }
+  
+  @media (max-width: 450px) {
+  
+    html{
+      font-size: 50%;
+    }
+  
+  }
+  

@@ -1,0 +1,176 @@
+/* Header Styles */
+header {
+  position: fixed;
+  top: 0; left: 0;
+  right: 0;
+  background: var(--light-white);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  box-shadow: var(--box-shadow);
+
+}
+
+header .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--dark);
+  text-transform: uppercase;
+}
+
+header .logo span {
+  color: var(--primary-base);
+}
+
+header .navbar a {
+  color: var(--dark);
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0 3rem;
+  position: relative;
+  right: -30rem; /* replace it*/
+}
+
+
+header .navbar a:hover{
+  color: var(--primary-base);
+  border-bottom: 3px solid var(--primary-base);
+  padding-right: 2rem;
+  font-weight: 500;
+}
+
+#menu-btn {
+  display: none;
+}
+
+
+/* Midea Queries */
+@media (max-width: 1180px) {
+
+  .header{
+    padding: 2rem;
+  }
+
+  .header .navbar {
+    right: 1rem;
+  }
+}
+
+
+@media (max-width: 991px) {
+
+  html{
+    font-size: 55%;
+  }
+
+  .header{
+    padding: 2rem;
+  }
+
+  .header .navbar a{
+    right: 0;
+  }
+}
+
+
+@media (max-width: 768px){
+
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+     /* right: 2rem;  */
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    background: var(--white);
+
+  }
+
+  .header .navbar#active {
+    position: absolute;
+    top: 110%;
+    right: 2rem;
+    transition: .4s linear;
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    background: var(--white);
+  }
+
+  .header .navbar a{
+    font-size: 2rem;
+    margin: 2rem 2.5rem;
+    display: block;
+  }
+
+  .header .navbar a:hover{
+    /* background:30px solid var(--primary-base); */
+    color: var(--primary-base);
+    border-bottom: 3px solid var(--primary-base);
+    padding-right: 2rem;
+    font-weight: 500;
+    width: 60px;
+  }
+
+  .header div a {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: var(--gray-light);
+    color: var(--dark);
+    font-size: 2rem;
+    margin-left: .3rem;
+    text-align: center;
+  }
+
+  /* .group-service .row {
+    flex-flow: column-reverse;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .group-service .row:nth-child(even) {
+    flex-flow: column;
+  } 
+
+  .group-service .row .image img {
+    width: 100vw;
+  } 
+
+  .group-service .row .content {
+    padding: 0;
+  }
+
+  .contact .row {
+    flex-flow: column;
+  }
+
+  .contact .row .image img {
+    width: 100vw;
+  }
+
+  .contact .row .form-container{
+    width: 100%;
+    padding: 0 1.5rem;
+  } */
+}
+
+@media (max-width: 450px) {
+
+  html{
+    font-size: 50%;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+}

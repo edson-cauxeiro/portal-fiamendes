@@ -1,0 +1,92 @@
+
+.footer {
+  background: var(--gradient);
+}
+
+.footer .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+  gap: 1.5rem;
+  margin-left: 20rem;
+}
+
+.footer .box-container .box {
+  text-align: left;
+}
+
+.footer .box-container .box h3{
+  font-size: 2.5rem;
+  color: var(--light-white);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .links{
+  display: block;
+  font-size: 1.5rem;
+  color: var(--dark);
+  padding: 1rem 0;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.footer .box-container .box .links i{
+  color: var(--light-white);
+  padding-right: .5rem;
+}
+
+.footer .box-container .box .links:hover i{
+  color: var(--light-white);
+  padding-right: 2rem;
+}
+
+.footer .box-container .box p{
+  line-height: 1.8;
+  font-size: 1.5rem;
+  color: var(--light-white);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .share a{
+  color: var(--dark);
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  border-radius: .5rem;
+  font-size: 2rem;
+  margin-left: .2rem;
+  background: var(--gray-light);
+  text-align: center;
+}
+
+.footer .box-container .box .logo {
+  color: var(--dark);
+}
+
+.footer .box-container .box .logo span {
+  color: var(--white);
+}
+
+.footer .credit{
+  text-align: center;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  color: var(--dark);
+  border-top: var(--border);
+}
+
+.footer .credit span {
+  color: var(--light-white);
+}
+
+
+
+/* Midea Queries */
+@media (max-width: 450px) {
+
+  .footer {
+    text-align: center;
+  }
+
+}
