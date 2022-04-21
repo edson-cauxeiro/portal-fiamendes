@@ -1,5 +1,7 @@
 /* Header Styles */
-header {
+
+
+.header {
   position: fixed;
   top: 0; left: 0;
   right: 0;
@@ -7,21 +9,29 @@ header {
   z-index: 1000;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 2rem 9%;
-  box-shadow: var(--box-shadow);
+  justify-content:  space-between;
+  padding: 1rem 9%;
+  transition: all 0.5s ease;
 
 }
 
-header .logo {
-  font-size: 2.5rem;
-  font-weight: bolder;
-  color: var(--dark);
-  text-transform: uppercase;
+.header.navScroll {
+  position: fixed;
+  top: 1rem;
+  left: 3rem;
+  right: 3rem;
+  padding: 1.5rem 2rem;
+  border-radius: 20px;
+  background: var(--light-white);
 }
 
-header .logo span {
-  color: var(--primary-base);
+.header.navScroll .navbar a {
+  right: -22rem;
+}
+
+header .logoImg img {
+  width: 9rem;
+  height: 8rem;
 }
 
 header .navbar a {
@@ -30,7 +40,7 @@ header .navbar a {
   font-weight: 500;
   margin: 0 3rem;
   position: relative;
-  right: -30rem; /* replace it*/
+  right: -25rem; 
 }
 
 
@@ -39,11 +49,14 @@ header .navbar a:hover{
   border-bottom: 3px solid var(--primary-base);
   padding-right: 2rem;
   font-weight: 500;
-}
+} 
 
 #menu-btn {
   display: none;
 }
+
+
+
 
 
 /* Midea Queries */
@@ -55,6 +68,10 @@ header .navbar a:hover{
 
   .header .navbar {
     right: 1rem;
+  }
+
+  .header .navbar a {
+    right: -15rem;
   }
 }
 
@@ -70,7 +87,7 @@ header .navbar a:hover{
   }
 
   .header .navbar a{
-    right: 0;
+    right: -8rem;
   }
 }
 
@@ -106,12 +123,13 @@ header .navbar a:hover{
 
   .header .navbar a{
     font-size: 2rem;
-    margin: 2rem 2.5rem;
+    margin: 2rem 2rem;
     display: block;
+    right: -5rem;
   }
 
+
   .header .navbar a:hover{
-    /* background:30px solid var(--primary-base); */
     color: var(--primary-base);
     border-bottom: 3px solid var(--primary-base);
     padding-right: 2rem;
@@ -131,36 +149,6 @@ header .navbar a:hover{
     text-align: center;
   }
 
-  /* .group-service .row {
-    flex-flow: column-reverse;
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-
-  .group-service .row:nth-child(even) {
-    flex-flow: column;
-  } 
-
-  .group-service .row .image img {
-    width: 100vw;
-  } 
-
-  .group-service .row .content {
-    padding: 0;
-  }
-
-  .contact .row {
-    flex-flow: column;
-  }
-
-  .contact .row .image img {
-    width: 100vw;
-  }
-
-  .contact .row .form-container{
-    width: 100%;
-    padding: 0 1.5rem;
-  } */
 }
 
 @media (max-width: 450px) {

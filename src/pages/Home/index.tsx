@@ -4,10 +4,11 @@ import farmacia from '../../assets/images/pharmacist.svg';
 import grafica from '../../assets/images/designer.svg';
 import deposito from '../../assets/images/remedy.svg';
 import servicos from '../../assets/images/heavy_box.svg';
+import shape from '../../assets/images/header-shape.svg';
 
-import image4 from "../../assets/img-4.jpg";
-import image5 from "../../assets/img-5.jpg";
-import image6 from "../../assets/img-6.jpg";
+import image4 from "../../assets/pharmacy-3.png";
+import image5 from "../../assets/graphic-3.png";
+import image6 from "../../assets/stock-2.png";
 
 import './styles.css'
 
@@ -15,9 +16,11 @@ export function Home() {
 
   return(
     <>
+
       {/* Home Sections Start */}
       <section className="home" id="home">
-
+        
+        
         <div className="banner">
             <div className="title-text">
               <h3>Bem vindos à FiaMendes</h3>
@@ -27,11 +30,17 @@ export function Home() {
             {/* <a href="?#" className="btn">Saiba mais</a> */}
         </div>   
 
+        {/* <div className="overlay"></div> */}
+        
+        <div className="hero-shape">
+          <img src={shape} alt="ondas do banner da home" />
+        </div>
+
       </section>
         {/*  Home Sections Ends  */}
 
         {/* Home-Main Sections Start */}
-        <section className="group-service" id="group-service">
+        <section className="group-service" id="services">
 
         <h1 className="heading"> Nossos <span>Seviços</span></h1>
 
@@ -117,9 +126,9 @@ export function Home() {
 
       </section>
 
-      <section className="item" id="item">
+      <section className="image-group" id="image-group">
 
-          <div className="items-container">
+          <div className="image-container">
               <div className="item">
                   <img src={image4} alt="Telefone da Empresa Fiamendes" />
                   <h3>AMIVIK Farmacia</h3>

@@ -3,6 +3,7 @@ section {
   padding: 2rem 9%;
  }
 
+
  .home {
    min-height: 100vh;
    display: flex;
@@ -11,12 +12,14 @@ section {
    flex-flow: column;
    position: relative;
    z-index: 0;
-   background: url(../../assets/images/Banner-home.jpg) no-repeat;
+   background: url(../../assets/images/banner-home.jpg) no-repeat;
    background-position: center;
    background-size: cover;
+   background-attachment: fixed;
    padding-top: 17rem;
    padding-bottom: 10rem;
  }
+
  
  .home .banner {
    padding-top: 20rem;
@@ -72,6 +75,23 @@ section {
   color: var(--dark);
   background: var(--white);
   border: none;
+}
+
+
+/* .home .overlay {
+  
+} */
+
+.home .hero-shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.home .hero-shape img {
+  width: 100%;
+  display: block;
 }
  
  
@@ -145,7 +165,6 @@ section {
    padding: .5rem 2.5rem;
    font-size: 1.7rem;
    border-radius:  5rem;
-   /* border: .3rem solid var(--dark); */
    background: var(--primary-base);
    color: var(--white);
    cursor: pointer;
@@ -158,7 +177,7 @@ section {
  
 
 
- .item .items-container {
+ .image-group .image-container {
   display: flex;
   flex-wrap: wrap;
   gap: 2.5rem;
@@ -166,22 +185,27 @@ section {
   padding-bottom: 2rem;
 }
 
-.item .items-container .item {
+.image-group .image-container .item {
   flex: 1 1 25rem;
   background: var(--white);
-  padding: 2rem;
+  padding: 1.5rem;
   border: .1rem solid rgba(0, 0, 0, .2);
   border-radius: .6rem;
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
   text-align: center;
 }
 
-.item .items-container .item img {
-  width: 28rem;
-  height: 20rem;
+.image-group .image-container .item:hover img {
+  transform: scale(1.2);
 }
 
-.item .items-container .item h3 {
+.image-group .image-container .item img {
+  width: 30rem;
+  height: 25rem;
+  transition: .7s ease-in-out;
+}
+
+.image-group .image-container .item h3 {
   font-size: 1.5rem;
   color: var(--gray);
   padding: 1rem 0;
@@ -212,7 +236,7 @@ section {
    .group-service .row .content {
      padding: 0;
    }
- 
+
  }
  
  @media (max-width: 450px) {
@@ -224,6 +248,13 @@ section {
    .heading {
      font-size: 1.5rem;
    }
+
+   .image-group .image-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
  
  }
  

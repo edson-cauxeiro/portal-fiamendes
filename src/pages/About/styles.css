@@ -3,7 +3,7 @@
     min-height: 100vh;
     width: 100vw;
     text-align: center;
-    padding-top: 9rem;
+    padding-top: 11rem;
     
   }
   
@@ -72,4 +72,33 @@
 .about .item-container .item p {
   font-size: 1.5rem;
   color: var(--gray);
+}
+
+
+/* Midea Queries */
+@media (max-width: 1180px) {
+  .about{
+    padding-top: 13rem;
+  }
+ 
+}
+
+
+@media (max-width: 991px) {
+  .about{
+    padding-top: 13rem;
+  }
+}
+
+
+@media (max-width: 768px){
+  .about{
+    padding-top: 12rem;
+  }
+
+  .about .item-container{
+    display: flex;
+    flex-direction: column;
+  }
+
 }

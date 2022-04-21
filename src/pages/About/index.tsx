@@ -1,8 +1,3 @@
-import { Link } from "react-router-dom";
-
-import image4 from "../../assets/img-4.jpg";
-import image5 from "../../assets/img-5.jpg";
-
 
 import './styles.css';
 
@@ -35,17 +30,6 @@ export function About() {
                     maioria dos seus problemas.
                   </p>
                </div>
-
-
-                <div className="item-container">
-                  <div className="item">
-                      <img src={image4} alt="Telefone da Empresa Fiamendes" />
-                  </div>
-
-                  <div className="item">
-                      <img src={image5} alt="Email da Empresa Fiamendes" />
-                  </div>             
-                </div>
                
                 <div className="item-container">
                     <div className="item">          
